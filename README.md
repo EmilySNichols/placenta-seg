@@ -179,8 +179,6 @@ Commercial use requires separate permission from the relevant rights holder. Aca
 
 ## Citation
 
-## Citation
-
 If you use Placenta-Seg or its pretrained nnU-Net model in your research, please cite:
 
 Nichols, E. (2026). Placenta-Seg: Automated Placenta Segmentation from T2-Weighted MRI* (v1.0.1) [Computer software]. Zenodo. https://doi.org/10.5281/zenodo.23374110
