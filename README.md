@@ -1,5 +1,6 @@
 # Placenta-Seg
 [![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.23374110.svg)](https://doi.org/10.5281/zenodo.23374110)
+
 **Pretrained nnU-Net v2 model for automated placenta segmentation in T2*-weighted MRI**
 
 Placenta-Seg provides a pretrained **2D nnU-Net v2, five-fold ensemble** and a Python command-line application (`run.py`) for segmenting the placenta in T2*-weighted MRI. The application discovers appropriately named images in a BIDS-style dataset, prepares the input for nnU-Net, and writes binary placenta masks and metadata to a separate output directory.
@@ -180,11 +181,13 @@ Commercial use requires separate permission from the relevant rights holder. Aca
 
 ## Citation
 
-If you use Placenta-Seg or its pretrained model in your research, please cite the software using the DOI provided in this repository.
+If you use Placenta-Seg or its pretrained nnU-Net model in your research, please cite:
 
-A formatted citation is available through GitHub's **Cite this repository** option.
+Nichols, E. (2026). Placenta-Seg: Automated Placenta Segmentation from T2-Weighted MRI* (v1.0.1) [Computer software]. Zenodo. https://doi.org/10.5281/zenodo.23374110
 
-For reproducibility, we recommend citing the DOI corresponding to the specific version of Placenta-Seg used in your analysis.
+You can also generate a formatted citation using GitHub's Cite this repository option.
+
+For reproducibility, please cite the specific software version used in your analysis.
 
 The pretrained model and inference application are distributed for non-commercial use under their respective licenses. See `LICENSE-MODEL.md` and `LICENSE-CODE.md` for details.
 
