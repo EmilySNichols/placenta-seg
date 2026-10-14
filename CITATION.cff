@@ -14,7 +14,7 @@ authors:
     given-names: Emily
 repository-code: "https://github.com/EmilySNichols/placenta-seg"
 url: "https://github.com/EmilySNichols/placenta-seg"
-version: "1.0.0"
+version: "1.0.1"
 date-released: "2026-10-14"
 keywords:
   - placenta
@@ -23,4 +23,4 @@ keywords:
   - nnU-Net
   - fetal imaging
   - deep learning
-
+doi: "10.5281/zenodo.23374110"
