@@ -1,0 +1,26 @@
+
+cff-version: 1.2.0
+message: "If you use Placenta-Seg in your research, please cite this software."
+type: software
+title: "Placenta-Seg: Automated Placenta Segmentation from T2*-Weighted MRI"
+abstract: >-
+  Placenta-Seg provides a pretrained two-dimensional nnU-Net v2
+  model for automated placenta segmentation from T2*-weighted
+  magnetic resonance imaging. The software includes a Python
+  inference application supporting BIDS-oriented datasets and
+  five-fold ensemble prediction.
+authors:
+  - family-names: Nichols
+    given-names: Emily
+repository-code: "https://github.com/EmilySNichols/placenta-seg"
+url: "https://github.com/EmilySNichols/placenta-seg"
+version: "1.0.0"
+date-released: "2026-10-14"
+keywords:
+  - placenta
+  - MRI
+  - segmentation
+  - nnU-Net
+  - fetal imaging
+  - deep learning
+
