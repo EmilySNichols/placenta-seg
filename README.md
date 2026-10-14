@@ -46,33 +46,25 @@ python run.py --help
 
 ### 2. Download and install the model
 
-Download **`placenta_nnunet.zip`** from the [GitHub Releases](https://github.com/EmilySNichols/placenta-seg/releases) page. The archive contains the five trained folds, plans, and dataset metadata.
+Download the pretrained five-fold nnU-Net model from the Placenta-Seg v1.0.0 release.
 
-Choose a persistent model directory and install the ZIP:
+The model is distributed as placenta_nnunet.zip and includes all five trained folds required for ensemble inference.
+
+After downloading, set the nnU-Net results directory:
 
 ```bash
 export nnUNet_results="$HOME/nnUNet_results"
 mkdir -p "$nnUNet_results"
+```
 
+Install the pretrained model:
+
+```bash
 nnUNetv2_install_pretrained_model_from_zip /path/to/placenta_nnunet.zip
+
 ```
 
-The installation should create:
-
-```text
-nnUNet_results/
-└── Dataset001_placenta/
-    └── nnUNetTrainer__nnUNetPlans__2d/
-        ├── fold_0/
-        ├── fold_1/
-        ├── fold_2/
-        ├── fold_3/
-        ├── fold_4/
-        ├── dataset.json
-        └── plans.json
-```
-
-Set `nnUNet_results` again in any new terminal session before running inference (or add it to your shell configuration).
+The model will be installed under Dataset001_placenta and can then be used directly with the Placenta-Seg inference application.
 
 ## Input data
 
