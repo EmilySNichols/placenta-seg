@@ -40,4 +40,24 @@ jobs:
           tags: |
             ghcr.io/emilynichols/placenta-seg:1.0.2
             ghcr.io/emilynichols/placenta-seg:latest
+  
+  registry-test:
+    runs-on: ubuntu-latest
+    permissions:
+      contents: read
+      packages: write
+
+    steps:
+      - name: Log in to GHCR
+        uses: docker/login-action@v3
+        with:
+          registry: ghcr.io
+          username: ${{ github.actor }}
+          password: ${{ secrets.GITHUB_TOKEN }}
+
+      - name: Test registry push
+        run: |
+          docker pull hello-world:latest
+          docker tag hello-world:latest ghcr.io/emilynichols/placenta-seg:registry-test
+          docker push ghcr.io/emilynichols/placenta-seg:registry-test
 
