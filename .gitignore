@@ -1,0 +1,17 @@
+.venv/
+__pycache__/
+*.pyc
+.DS_Store
+
+models/
+test_bids/
+test_output/
+
+nnUNet_raw/
+nnUNet_preprocessed/
+nnUNet_results/
+
+*.nii
+*.nii.gz
+*.pth
+*.npz
